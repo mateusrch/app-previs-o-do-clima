@@ -1,5 +1,7 @@
 ﻿# Aplicativo web de previsão do clima.
 
+Clique no link para usar o app: https://app-previsao-do-clima.netlify.app/
+
 ![app-git](https://github.com/mateusrch/app-previsao-do-clima/assets/133996897/b03991c0-c98a-4843-a2dc-1a24de259e56) 
 ![search-dark](https://github.com/mateusrch/app-previsao-do-clima/assets/133996897/46d7832e-3177-4939-9437-3836335322d1) 
 ![search-light](https://github.com/mateusrch/app-previsao-do-clima/assets/133996897/c1bb58a4-4325-4e73-b78c-761494e60470)
