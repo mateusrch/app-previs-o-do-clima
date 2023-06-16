@@ -78,5 +78,9 @@ form.addEventListener('submit', e => {
 
   const inputValue = form.city.value.toLowerCase().trim();
 
+  if (!inputValue.length) {
+    return;
+  }
+
   insertInfosInHTML(inputValue);
 });
