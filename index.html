@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google fonts  -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com" />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style/main.css">
+  <title>Weather</title>
+</head>
+<body>
+  
+  <section class="full-container">
+    <header class="header">
+      <section class="header__top">
+        <h2 class="header__title">Informações do clima</h2>
+        <label>
+          Ligth-mode
+          <input data-theme-light-mode type="checkbox">
+        </label>
+      </section>
+      <section class="header__search">
+        <form data-form="header__form" class="header__form">
+          <input type="text" class="header__input" name="city" autocomplete="off" required/>
+          <label class="header__label">Procure por uma cidade</label>
+          <button type="submit" class="header__icon--search fa-solid fa-magnifying-glass"></button>
+        </form>
+      </section>
+    </header> <!--end header-->
+
+    <div data-loading class="loading-container hidden">
+      <div class="loading"></div>
+    </div> <!--end loading-->
+
+    <main class="main hidden">
+      <section class="weather-city">
+        <h2 data-city-name class="weather-city__title"></h2>
+        <p class="weather-city__sub-title"></p> <!--12 setembro, segunda-feira-->
+
+        <div class="weather-city__content">
+          <span data-city-deg class="weather-city__deg"></span>
+          <img data-city-icon src="#" alt="icone de tempestade">
+          <p data-city-description class="weather__description"></p>
+        </div>
+
+      </section> <!-- end weather-->
+
+      <section class="quality-air">
+        <h2 class="quality-air__title">Qualidade do ar: </h2><span data-air-quality="description"></span>
+      </section> <!--end quality air-->
+
+      <section class="forecast">
+        <h2 class="forecast__title">Previsão do tempo</h2>
+        <section data-carousel="forecast__carousel" class="forecast__carousel">
+          <i data-carousel-btn="carousel-btn-prev" class="forecast__carousel-btn-prev fa-solid fa-angle-left"></i>
+          <i data-carousel-btn="carousel-btn-next" class="forecast__carousel-btn-next fa-solid fa-angle-right"></i>
+          <div data-carousel="forecast__carousel-wrapper" class="forecast__carousel-wrapper">
+            <div data-carousel="forecast__carousel-gallery" class="forecast__carousel-gallery">
+              
+            </div>
+          </div>
+        </section>
+      </section> <!--end forecast-->
+
+      <section class="other-infos">
+        <div class="other-infos__card">
+          <div>
+            <i class="other-infos__icon fa-solid fa-eye"></i>
+            <p class="other-infos__text">Visibilidade</p>
+          </div>
+          <span data-weather-visibility class="other-infos__value"></span>
+        </div>
+        <div class="other-infos__card">
+          <div>
+            <i class="other-infos__icon fa-solid fa-eye"></i>
+            <p class="other-infos__text">Vento</p>
+          </div>
+          <span data-weather-wind class="other-infos__value"></span>
+        </div>
+        <div class="other-infos__card">
+          <div>
+            <i class="other-infos__icon fa-solid fa-eye"></i>
+            <p class="other-infos__text">Umidade</p>
+          </div>
+          <span data-weather-humidity class="other-infos__value"></span>
+        </div>
+      </section>
+    </main> <!--end main-->
+    <footer class="footer hidden">
+      <a href="https://github.com/mateusrch/mateusrch.git" target="_blank" class="fa-brands fa-github"></a>
+      <a href="https://www.instagram.com/mateuscavalheiroo/" target="_blank" class="fa-brands fa-instagram"></a>
+    </footer>
+  </section>
+
+  <script src="js/weather.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

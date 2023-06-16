@@ -1,0 +1,22 @@
+:root {
+  --font-color: #f3f3f3;
+  --second-font-color: #a19d9d;
+  --body-bg: #0b1116;
+  --section-bg: #202329;
+  --bg-transparent: transparent;
+  --bg-btn-carousel: var(--font-color);
+  --insta-color: var(--font-color);
+  --github-color: var(--font-color);
+}
+
+/* Ligth theme  */
+.light-mode:root {
+  --font-color: #0b1116;
+  --second-font-color: #09182e;
+  --body-bg: #f5f8fd;
+  --section-bg: #fffeff;
+  --bg-transparent: transparent;
+  --bg-btn-carousel: #98bcf2;
+  --insta-color: #C13584;
+  --github-color: 333;
+}

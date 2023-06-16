@@ -1,0 +1,13 @@
+.full-container {
+  width: 40em;
+  max-width: 50em;
+  height: 100%;
+  padding-top: 2rem;
+  background: var(--body-bg);
+}
+
+@media screen and (min-width: 50em) {
+  .full-container {
+    border-radius: .8rem;
+  }
+}
